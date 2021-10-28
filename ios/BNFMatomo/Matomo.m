@@ -60,7 +60,7 @@ RCT_EXPORT_METHOD(setAppOptOut:(BOOL)isOptedOut)
     RCTLogInfo(@"Setting opt-out");
 #endif
     if (tracker != nil) {
-        tracker.isOptedOut = true;
+        tracker.isOptedOut = isOptedOut;
     }
 }
 
